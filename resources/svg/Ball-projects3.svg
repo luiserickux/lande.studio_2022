@@ -1,0 +1,22 @@
+<svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_121_3191)">
+<ellipse cx="41.0003" cy="41.2161" rx="40" ry="40" transform="rotate(-90 41.0003 41.2161)" fill="#121B21"/>
+<ellipse cx="41.0003" cy="41.2161" rx="40" ry="40" transform="rotate(-90 41.0003 41.2161)" fill="url(#paint0_radial_121_3191)"/>
+<path d="M41.0003 2.21605C62.5394 2.21604 80.0003 19.6769 80.0003 41.216C80.0003 62.7551 62.5394 80.216 41.0003 80.2161C19.4612 80.2161 2.00027 62.7552 2.00027 41.2161C2.00027 19.677 19.4612 2.21606 41.0003 2.21605Z" stroke="url(#paint1_linear_121_3191)" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_f_121_3191" x="0.250275" y="0.466064" width="81.5" height="81.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="0.375" result="effect1_foregroundBlur_121_3191"/>
+</filter>
+<radialGradient id="paint0_radial_121_3191" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(21.5536 52.9035) rotate(-23.8059) scale(72.4543 79.4317)">
+<stop stop-color="#7208C4"/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+<linearGradient id="paint1_linear_121_3191" x1="41.0003" y1="41.2161" x2="68.2408" y2="91.9761" gradientUnits="userSpaceOnUse">
+<stop stop-color="#030B17"/>
+<stop offset="1" stop-color="#8E0AF5"/>
+</linearGradient>
+</defs>
+</svg>

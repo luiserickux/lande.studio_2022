@@ -1,0 +1,43 @@
+:root {
+    // Colores customizados
+    --bg-landing-services: linear-gradient(180deg, hsla(216, 77%, 5%, 0) 0%, var(--color-purple-950) 100%);
+}
+
+body {
+    background-color: var(--color-blue-950);
+}
+
+li {
+    list-style: none;
+}
+
+// Navbar / Header 
+.container-header {
+    border: 1px solid blue;
+    height: 5rem;
+    margin: 0 var(--spacing-navbar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-header {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-4);
+}
+
+.social-media {
+    background-color: var(--theme-dark-bg);
+    opacity: 0.75;
+    transition: all 150ms ease;
+
+    &:hover {
+        opacity: 1;
+        transition: all 150ms ease;
+    }
+}
+
+main {
+    padding: 0 var(--spacing-margin);
+}

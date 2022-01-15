@@ -1,0 +1,84 @@
+// Transiciones de micro-interacciones
+%transition-fast {
+    transition: all 150ms ease;
+}
+
+%transition-normal {
+    transition: all 300ms ease;
+}
+
+%transition-slow {
+    transition: all 450ms ease;
+}
+
+// Animaciones básicas //
+%template-animation {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+// Arriba a abajo
+.animation-up-down {
+    animation-name: animationUpDown;
+    @extend %template-animation;
+}
+
+@keyframes animationUpDown {
+    from {
+        transform: translateY(0)
+    }
+
+    to {
+        transform: translateY(2.5rem);
+    }
+}
+
+// Abajo a arriba
+.animation-down-up {
+    animation-name: animationDownUp;
+    @extend %template-animation;
+}
+
+@keyframes animationDownUp {
+    from {
+        transform: translateY(0)
+    }
+
+    to {
+        transform: translateY(-2.5rem);
+    }
+}
+
+// Izquierda a derecha
+.animation-left-right {
+    animation-name: animationLeftRight;
+    @extend %template-animation;
+}
+
+@keyframes animationLeftRight {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(2.5rem);
+    }
+}
+
+// Derecha a izquierda
+.animation-right-left {
+    animation-name: animationRightLeft;
+    @extend %template-animation;
+}
+
+@keyframes animationRightLeft {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-2.5rem);
+    }
+}

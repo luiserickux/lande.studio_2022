@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    // Spacings between elements
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.50rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1.00rem;
+    --spacing-5: 1.50rem;
+    --spacing-6: 2.00rem;
+    --spacing-7: 2.50rem;
+    --spacing-8: 3.00rem;
+    --spacing-9: 3.50rem;
+    --spacing-10: 4.00rem;
+    --spacing-11: 4.50rem;
+    --spacing-12: 5.00rem;
+    --spacing-13: 5.50rem;
+    --spacing-14: 6.00rem;
+    --spacing-15: 6.25rem;
+    --spacing-16: 6.50rem;
+    --spacing-17: 7.50rem;
+
+    // Margins
+    --spacing-navbar: var(--spacing-12);
+    --spacing-margin: var(--spacing-15);
+}
+
+// Media querie para tablet
+@media screen and (max-width:801px) {
+    :root {
+        --spacing-navbar: var(--spacing-10);
+        --spacing-margin: var(--spacing-10);
+    }
+}
+
+// Media querie para Mobile
+@media screen and (max-width:561px) {
+    :root {
+        --spacing-navbar: var(--spacing-6);
+        --spacing-margin: var(--spacing-6);
+    }
+}
+
+@media screen and (max-width:401px) {
+    :root {
+        --spacing-navbar: var(--spacing-4);
+        --spacing-margin: var(--spacing-4);
+    }
+}

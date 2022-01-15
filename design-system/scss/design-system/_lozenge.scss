@@ -1,0 +1,28 @@
+%template-lozenge {
+    display: flex;
+    align-items: center;
+    gap: 0.1875rem;
+    font-size: 0.625rem;
+    font-family: var(--ff-text);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-text);
+    padding: 0.0625rem .25rem;
+
+    .lozenge-icon {
+        order: -1;
+        width: 0.75rem;
+        height: .75rem
+    }
+}
+
+.lozenge-normal {
+    @extend %template-lozenge;
+    background: var(--color-blue-500);
+    color: white;
+}
+
+.lozenge-white {
+    @extend %template-lozenge;
+    background: white;
+    color: var(--color-blue-500);
+}

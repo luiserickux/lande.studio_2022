@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+    // Font family
+    --ff-title: "Montserrat Alternates", sans-serif;
+    --ff-text: "Open Sans", sans-serif;
+
+    // Font size
+    --fs-bigger: 3.25rem;
+    --fs-h1: 2.75rem;
+    --fs-h2: 2.375rem;
+    --fs-h3: 1.875rem;
+    --fs-h4: 1.5rem;
+    --fs-text: 1rem;
+    --fs-small: 0.938rem;
+    --fs-smaller: 0.875rem;
+
+    // Font weight
+    --fw-bold: 700;
+    --fw-semibold: 600;
+    --fw-regular: 400;
+
+    // Line height
+    --lh-title: 150%;
+    --lh-text: 160%;
+
+    // Letter spacing
+    --ls-title: 0.01rem;
+}
+
+// Tipografías
+.bigger {
+    color: var(--theme-dark-title);
+    font-size: var(--fs-bigger);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+h1 {
+    color: var(--theme-dark-title);
+    font-size: var(--fs-h1);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+h2 {
+    color: var(--theme-dark-title);
+    font-size: var(--fs-h2);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+h3 {
+    color: var(--theme-dark-title);
+    font-size: var(--fs-h3);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+h4 {
+    color: var(--theme-dark-title);
+    font-size: var(--fs-h4);
+    font-family: var(--ff-title);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+.subtitle-regular {
+    color: var(--theme-dark-text);
+    font-size: var(--fs-h4);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+.subtitle-semibold {
+    color: var(--theme-dark-text);
+    font-size: var(--fs-h4);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-title);
+    letter-spacing: var(--ls-title);
+}
+
+.text-regular {
+    color: var(--theme-dark-text);
+    font-size: var(--fs-text);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-text);
+}
+
+.text-semibold {
+    color: var(--theme-dark-text);
+    font-size: var(--fs-text);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-text);
+}
+
+.small-regular {
+    color: var(--theme-dark-light);
+    font-size: var(--fs-small);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-text);
+}
+
+.small-semibold {
+    color: var(--theme-dark-light);
+    font-size: var(--fs-small);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-text);
+}
+
+.smaller-regular {
+    color: var(--theme-dark-lighter);
+    font-size: var(--fs-smaller);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh-text);
+}
+
+.smaller-semibold {
+    color: var(--theme-dark-lighter);
+    font-size: var(--fs-smaller);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-text);
+}
+
+@media screen and (max-width :769px) {
+    :root {
+        // Font size Mobile
+        --fs-bigger: 2.625rem;
+        --fs-h1: 2.375rem;
+        --fs-h2: 2rem;
+        --fs-h3: 1.625rem;
+        --fs-h4: 1.25rem;
+        --fs-text: 1rem;
+        --fs-light: 0.9375rem;
+        --fs-lighter: 0.875rem;
+    }
+}

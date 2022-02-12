@@ -519,8 +519,8 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    border-top: 2px solid var(--border-cards-projects);
-    background: var(--bg-cards-projects);
+    // border-top: 2px solid var(--border-cards-projects);
+    // background: var(--bg-cards-projects);
 
     .small-semibold {
         color: var(--theme-dark-text);
@@ -708,11 +708,13 @@ footer {
     .banner {
         .detail1 {
             left: -55rem;
+            transform: translateY(-3rem);
         }
 
         .detail2 {
             right: -77rem;
             top: -30rem;
+            transform: translateY(10rem);
         }
 
         .ball1 {

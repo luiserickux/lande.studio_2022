@@ -4,14 +4,15 @@
     gap: 0.1875rem;
     font-size: 0.625rem;
     font-family: var(--ff-text);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-medium);
     line-height: var(--lh-text);
     padding: 0.0625rem .25rem;
+    border-radius: 0.125rem;
 
     .lozenge-icon {
         order: -1;
         width: 0.75rem;
-        height: .75rem
+        height: .75rem;
     }
 }
 

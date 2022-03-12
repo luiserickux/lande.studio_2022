@@ -672,6 +672,12 @@ footer {
     }
 }
 
+@media screen and (max-width :769px) {
+    br {
+        display: none;
+    }
+}
+
 @media screen and (max-width:700px) {
     :root {
         --grid-projects: minmax(auto, 22.5rem);

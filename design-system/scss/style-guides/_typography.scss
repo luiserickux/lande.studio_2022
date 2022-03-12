@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&family=Poppins:wght@400;500&display=swap');
 
 :root {
     // Font family
     --ff-title: "Montserrat Alternates", sans-serif;
-    --ff-text: "Open Sans", sans-serif;
+    --ff-text: "Poppins", sans-serif;
 
     // Font size
     --fs-bigger: 3.25rem;
@@ -16,9 +16,10 @@
     --fs-smaller: 0.875rem;
 
     // Font weight
-    --fw-bold: 700;
-    --fw-semibold: 600;
     --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
 
     // Line height
     --lh-title: 150%;
@@ -83,15 +84,6 @@ h4 {
     letter-spacing: var(--ls-title);
 }
 
-.subtitle-semibold {
-    color: var(--theme-dark-text);
-    font-size: var(--fs-h4);
-    font-family: var(--ff-text);
-    font-weight: var(--fw-semibold);
-    line-height: var(--lh-title);
-    letter-spacing: var(--ls-title);
-}
-
 .text-regular {
     color: var(--theme-dark-text);
     font-size: var(--fs-text);
@@ -104,7 +96,7 @@ h4 {
     color: var(--theme-dark-text);
     font-size: var(--fs-text);
     font-family: var(--ff-text);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-medium);
     line-height: var(--lh-text);
 }
 
@@ -120,7 +112,7 @@ h4 {
     color: var(--theme-dark-light);
     font-size: var(--fs-small);
     font-family: var(--ff-text);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-medium);
     line-height: var(--lh-text);
 }
 
@@ -136,7 +128,7 @@ h4 {
     color: var(--theme-dark-lighter);
     font-size: var(--fs-smaller);
     font-family: var(--ff-text);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-medium);
     line-height: var(--lh-text);
 }
 

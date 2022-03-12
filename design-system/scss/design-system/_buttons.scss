@@ -4,8 +4,9 @@
     gap: var(--spacing-2);
     align-items: center;
     font-family: var(--ff-text);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-medium);
     line-height: var(--lh-text);
+    border-radius: var(--spacing-1);
     @extend %transition-fast;
 
     &:hover {

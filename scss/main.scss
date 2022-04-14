@@ -302,10 +302,16 @@ main {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--border-cards-projects);
+    border-radius: .5rem;
+
+    &:last-child {
+        border: none;
+    }
 }
 
 .project-image {
     width: 100%;
+    border-radius: .5rem .5rem 0 0;
 }
 
 .project-content {
@@ -315,7 +321,7 @@ main {
     padding: var(--spacing-5);
     background: var(--bg-cards-projects);
     backdrop-filter: blur(8px);
-    /* Filtro desactivado por consumo de Recursos */
+    border-radius: 0 0 .5rem .5rem;
 
     p.text-semibold {
         margin-bottom: var(--spacing-2);
@@ -395,12 +401,14 @@ main {
     flex-direction: row;
     align-items: center;
     border: 2px solid var(--theme-light-border);
+    border-radius: 1rem;
     background: var(--bg-cards-projects);
 }
 
 .photo {
     max-width: 26.25rem;
     object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
 
     &.responsive {
         display: none;

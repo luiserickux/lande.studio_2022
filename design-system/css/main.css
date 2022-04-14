@@ -481,7 +481,7 @@ h4 {
   font-weight: var(--fw-medium);
   line-height: var(--lh-text);
   padding: 0.0625rem 0.25rem;
-  border-radius: 0.125rem;
+  border-radius: 1.125rem;
 }
 .lozenge-white .lozenge-icon, .lozenge-normal .lozenge-icon {
   -webkit-box-ordinal-group: 0;

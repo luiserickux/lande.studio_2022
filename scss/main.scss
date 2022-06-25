@@ -6,18 +6,22 @@
     }
 
     // Custom colors
-    --banner-op-linear: linear-gradient(90deg, var(--color-orange-300) 0%, var(--color-orange-400) 50%, var(--color-purple-300) 100%);
-    --cards-op-linear: linear-gradient(90deg, var(--color-orange-500) 10%, var(--color-purple-400) 100%);
-    --h2-orange-linear: linear-gradient(to left, hsl(354, 57%, 60%) 0%, var(--color-orange-400) 100%);
-    --bg-cards-projects: linear-gradient(134.9deg, rgba(255, 234, 208, 0.06) 0%, rgba(255, 242, 240, 0.08) 100%);
+    --banner-op-linear: linear-gradient(90deg, var(--color-orange-200) 25%, var(--color-orange-400) 100%);
+    --h2-orange-linear: linear-gradient(to right, var(--color-orange-300) 0%, var(--color-orange-500) 100%);
+    --bg-cards-projects: linear-gradient(134.9deg, hsla(28, 92%, 92%, 0.08) 0%, hsla(344, 62%, 90%, 0.08) 100%);
     --border-cards-projects: rgba(255, 255, 255, 0.2);
 
     // BG section Colors
-    --bg-landing-services: linear-gradient(180deg, hsla(216, 77%, 5%, 0) 0%, var(--color-purple-950) 100%);
-    --bg-landing-projects: linear-gradient(180deg, var(--color-purple-950) 0%, var(--color-purple-900) 68%, var(--color-purple-800) 100%);
-    --bg-landing-about: linear-gradient(180deg, var(--color-purple-800) 0%, var(--color-purple-900) 50%, var(--color-purple-950) 96%);
-    --bg-landing-big-section: radial-gradient(40% 55% at 50% 95%, var(--color-purple-500) 0%, rgba(14, 1, 24, 0) 130%),
-    linear-gradient(180deg, var(--color-purple-950) 4%, var(--color-blue-950) 100%);
+    --bg-landing-services: linear-gradient(180deg, hsla(223, 92%, 5%, 0) 0%, var(--color-purple-900) 100%);
+    --bg-landing-projects: linear-gradient(180deg, var(--color-purple-900) 0%, var(--color-purple-800) 100%);
+    --bg-landing-about: linear-gradient(180deg, var(--color-purple-800) 0%, var(--color-purple-900) 50%, var(--color-purple-950) 98%);
+    --bg-landing-big-section: radial-gradient(45% 55% at 50% 100%, var(--color-purple-500) 0%, var(--color-purple-700) 60%, var(--color-purple-950) 120%);
+
+    // Opacity colors
+    --color-opacity-tertiary: hsl(0, 0%, 62%);
+    --color-opacity-secondary: hsl(0, 0%, 72%);
+    --color-opacity-primary: hsl(0, 0%, 84%);
+    --color-opacity-important: hsl(0, 0%, 96%);
 
     // Grid layout
     --grid-projects: repeat(3, 1fr);
@@ -58,7 +62,7 @@ section {
     z-index: -1;
     position: absolute;
     pointer-events: none;
-    filter: blur(8px);
+    // filter: blur(8px);
 }
 
 .ball {
@@ -121,9 +125,11 @@ main {
 .container-banner {
     flex-direction: column;
     text-align: center;
-    padding: 10rem 0;
+    padding: 12rem 0;
 
     h1 {
+        text-shadow: 2px 4px 2px rgba(8, 0, 25, 0.080);
+
         span {
             background: var(--banner-op-linear);
             @extend %text-gradient;
@@ -132,6 +138,7 @@ main {
 
     h2 {
         margin: var(--spacing-4) 0 var(--spacing-6);
+        color: var(--color-purple-100);
     }
 
     a {
@@ -142,30 +149,22 @@ main {
 .banner {
     position: relative;
 
-    .detail1 {
+    .detail-graph {
         position: absolute;
-        width: 120rem;
-        left: -55rem;
-        top: -60rem;
-    }
-
-    .detail2 {
-        position: absolute;
-        width: 125rem;
-        right: -45rem;
-        top: -53rem;
-    }
-
-    .ball1 {
-        width: 10rem;
-        left: 40%;
         top: 0;
+        left: 50%;
+        transform: translate(-50%, -65%);
+    }
+
+    .graph {
+        animation: graph-rotate 60s ease infinite;
+        width: 110rem;
     }
 
     .ball2 {
-        width: 14rem;
-        bottom: 0;
-        left: 5%;
+        width: 8rem;
+        bottom: 10%;
+        left: 12%;
 
         &.animation-down-up {
             animation-duration: 4s;
@@ -173,9 +172,9 @@ main {
     }
 
     .ball3 {
-        width: 18rem;
+        width: 20rem;
         bottom: 10%;
-        right: 0;
+        right: 5%;
 
         &.animation-up-down {
             animation-duration: 5s;
@@ -200,9 +199,9 @@ main {
     }
 
     .ball2 {
-        width: 12rem;
+        width: 10rem;
         position: absolute;
-        bottom: 12%;
+        bottom: 10%;
         left: 10%;
     }
 }
@@ -257,8 +256,8 @@ main {
 
     .ball1 {
         width: 12rem;
-        top: 5%;
-        right: 10%;
+        top: 7.5%;
+        left: 25%;
         transform: rotateY(180deg);
         animation-duration: 5s;
     }
@@ -303,6 +302,7 @@ main {
     flex-direction: column;
     border: 1px solid var(--border-cards-projects);
     border-radius: .5rem;
+    min-width: 19rem;
 
     &:last-child {
         border: none;
@@ -320,22 +320,24 @@ main {
     height: 100%;
     padding: var(--spacing-5);
     background: var(--bg-cards-projects);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
     border-radius: 0 0 .5rem .5rem;
 
     p.primary-medium {
         margin-bottom: var(--spacing-2);
+        color: var(--color-opacity-primary);
     }
 
     p.secondary-regular {
-        margin-bottom: var(--spacing-5)
+        margin-bottom: var(--spacing-5);
+        color: var(--color-opacity-secondary);
     }
 
     a {
         display: block;
         text-align: center;
-        border-color: var(--theme-dark-tertiary);
-        color: var(--theme-dark-primary);
+        border-color: var(--color-opacity-tertiary);
+        color: var(--color-opacity-primary);
         margin-top: auto;
     }
 }
@@ -352,16 +354,18 @@ main {
 }
 
 .cta-project {
+    --gradient-border: -webkit-gradient(linear, left top, right bottom, from(var(--color-red-400)), to(var(--color-orange-300)));
+    --gradient-bg: -webkit-gradient(linear, left top, right bottom, from(var(--color-purple-800)), to(var(--color-red-800)));
     display: flex;
     padding-top: var(--spacing-7);
     padding-bottom: var(--spacing-7);
     flex-direction: column;
     justify-content: center;
-    background: radial-gradient(161.02% 108.7% at 0% 1.53%, #390462 0%, rgba(0, 0, 0, 0) 100%), radial-gradient(76.89% 58.96% at 100% 100%, #371F00 0%, rgba(0, 0, 0, 0) 100%);
+    background: var(--gradient-bg);
     border: .25rem solid transparent;
-    -moz-border-image: var(--cards-op-linear);
-    -webkit-border-image: var(--cards-op-linear);
-    border-image: var(--cards-op-linear);
+    border-image: var(--gradient-border);
+    -moz-border-image: var(--gradient-border);
+    -webkit-border-image: var(--gradient-border);
     border-image-slice: 1;
 
     p {
@@ -370,7 +374,8 @@ main {
     }
 
     a {
-        background: var(--cards-op-linear);
+        --linear-background: -webkit-gradient(linear, left top, right top, from(var(--color-red-400)), to(var(--color-red-600)));
+        background: var(--linear-background);
         color: white;
         margin-top: 0;
     }
@@ -422,7 +427,7 @@ main {
         margin-bottom: var(--spacing-4);
 
         span {
-            background: var(--cards-op-linear);
+            background: var(--h2-orange-linear);
             @extend %text-gradient;
         }
     }
@@ -508,7 +513,7 @@ main {
 
         span {
             @extend %text-gradient;
-            background: var(--banner-op-linear);
+            background: var(--h2-orange-linear);
         }
     }
 
@@ -518,7 +523,8 @@ main {
     }
 
     a {
-        color: var(--color-purple-600);
+        color: white;
+        background: -webkit-gradient(linear, left top, right bottom, from(var(--color-purple-400)), to(var(--color-purple-500)));
     }
 }
 
@@ -823,5 +829,15 @@ footer {
 
     .container-header {
         height: 4rem;
+    }
+}
+
+@keyframes graph-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }

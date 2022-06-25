@@ -138,7 +138,7 @@ main {
 
     h2 {
         margin: var(--spacing-4) 0 var(--spacing-6);
-        color: var(--color-purple-100);
+        color: var(--color-opacity-primary);
     }
 
     a {
@@ -687,6 +687,16 @@ footer {
 }
 
 @media screen and (max-width :769px) {
+    .banner {
+        .detail-graph {
+            transform: translate(-50%, -60%);
+        }
+
+        .graph {
+            width: 80rem;
+        }
+    }
+
     br {
         display: none;
     }
@@ -724,7 +734,14 @@ footer {
     }
 }
 
+@media screen and (max-width:630px) {
+    .follow-us {
+        display: none;
+    }
+}
+
 @media screen and (max-width:580px) {
+
     .banner {
         .detail1 {
             left: -55rem;
@@ -808,6 +825,16 @@ footer {
 }
 
 @media screen and (max-width:426px) {
+    .banner {
+        .detail-graph {
+            transform: translate(-50%, -40%);
+        }
+
+        .graph {
+            width: 50rem;
+        }
+    }
+
     .logo-lande {
         width: 5.5rem;
     }

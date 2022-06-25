@@ -323,19 +323,19 @@ main {
     backdrop-filter: blur(8px);
     border-radius: 0 0 .5rem .5rem;
 
-    p.text-semibold {
+    p.primary-medium {
         margin-bottom: var(--spacing-2);
     }
 
-    p.small-regular {
+    p.secondary-regular {
         margin-bottom: var(--spacing-5)
     }
 
     a {
         display: block;
         text-align: center;
-        border-color: var(--theme-dark-lighter);
-        color: var(--theme-dark-text);
+        border-color: var(--theme-dark-tertiary);
+        color: var(--theme-dark-primary);
         margin-top: auto;
     }
 }
@@ -530,8 +530,8 @@ footer {
     // border-top: 2px solid var(--border-cards-projects);
     // background: var(--bg-cards-projects);
 
-    .small-semibold {
-        color: var(--theme-dark-text);
+    .secondary-medium {
+        color: var(--theme-dark-primary);
     }
 }
 

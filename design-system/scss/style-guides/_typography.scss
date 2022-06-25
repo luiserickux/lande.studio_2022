@@ -7,13 +7,14 @@
 
     // Font size
     --fs-bigger: 3.25rem;
-    --fs-h1: 2.75rem;
+    --fs-h1: 2.93rem;
     --fs-h2: 2.375rem;
     --fs-h3: 1.875rem;
     --fs-h4: 1.5rem;
-    --fs-text: 1rem;
-    --fs-small: 0.938rem;
-    --fs-smaller: 0.875rem;
+    --fs-primary-text: 1rem;
+    --fs-secondary-text: 0.9375rem;
+    --fs-tertiary-text: 0.875rem;
+    --fs-tiny-text: 0.625rem;
 
     // Font weight
     --fw-regular: 400;
@@ -26,12 +27,12 @@
     --lh-text: 160%;
 
     // Letter spacing
-    --ls-title: 0.01rem;
+    --ls-title: 0.01em;
 }
 
 // Tipografías
-.bigger {
-    color: var(--theme-dark-title);
+.important {
+    color: var(--theme-dark-important);
     font-size: var(--fs-bigger);
     font-family: var(--ff-title);
     font-weight: var(--fw-bold);
@@ -40,7 +41,7 @@
 }
 
 h1 {
-    color: var(--theme-dark-title);
+    color: var(--theme-dark-important);
     font-size: var(--fs-h1);
     font-family: var(--ff-title);
     font-weight: var(--fw-bold);
@@ -49,7 +50,7 @@ h1 {
 }
 
 h2 {
-    color: var(--theme-dark-title);
+    color: var(--theme-dark-important);
     font-size: var(--fs-h2);
     font-family: var(--ff-title);
     font-weight: var(--fw-semibold);
@@ -58,7 +59,7 @@ h2 {
 }
 
 h3 {
-    color: var(--theme-dark-title);
+    color: var(--theme-dark-important);
     font-size: var(--fs-h3);
     font-family: var(--ff-title);
     font-weight: var(--fw-semibold);
@@ -67,7 +68,7 @@ h3 {
 }
 
 h4 {
-    color: var(--theme-dark-title);
+    color: var(--theme-dark-important);
     font-size: var(--fs-h4);
     font-family: var(--ff-title);
     font-weight: var(--fw-semibold);
@@ -75,8 +76,8 @@ h4 {
     letter-spacing: var(--ls-title);
 }
 
-.subtitle-regular {
-    color: var(--theme-dark-text);
+.subtitle {
+    color: var(--theme-dark-primary);
     font-size: var(--fs-h4);
     font-family: var(--ff-text);
     font-weight: var(--fw-regular);
@@ -84,55 +85,63 @@ h4 {
     letter-spacing: var(--ls-title);
 }
 
-.text-regular {
-    color: var(--theme-dark-text);
-    font-size: var(--fs-text);
+.primary-regular {
+    color: var(--theme-dark-primary);
+    font-size: var(--fs-primary-text);
     font-family: var(--ff-text);
     font-weight: var(--fw-regular);
     line-height: var(--lh-text);
 }
 
-.text-semibold {
-    color: var(--theme-dark-text);
-    font-size: var(--fs-text);
+.primary-medium {
+    color: var(--theme-dark-primary);
+    font-size: var(--fs-primary-text);
     font-family: var(--ff-text);
     font-weight: var(--fw-medium);
     line-height: var(--lh-text);
 }
 
-.small-regular {
-    color: var(--theme-dark-light);
-    font-size: var(--fs-small);
+.secondary-regular {
+    color: var(--theme-dark-secondary);
+    font-size: var(--fs-secondary-text);
     font-family: var(--ff-text);
     font-weight: var(--fw-regular);
     line-height: var(--lh-text);
 }
 
-.small-semibold {
-    color: var(--theme-dark-light);
-    font-size: var(--fs-small);
+.secondary-medium {
+    color: var(--theme-dark-secondary);
+    font-size: var(--fs-secondary-text);
     font-family: var(--ff-text);
     font-weight: var(--fw-medium);
     line-height: var(--lh-text);
 }
 
-.smaller-regular {
-    color: var(--theme-dark-lighter);
-    font-size: var(--fs-smaller);
+.tertiary-regular {
+    color: var(--theme-dark-tertiary);
+    font-size: var(--fs-tertiary-text);
     font-family: var(--ff-text);
     font-weight: var(--fw-regular);
     line-height: var(--lh-text);
 }
 
-.smaller-semibold {
-    color: var(--theme-dark-lighter);
-    font-size: var(--fs-smaller);
+.tertiary-medium {
+    color: var(--theme-dark-tertiary);
+    font-size: var(--fs-tertiary-text);
     font-family: var(--ff-text);
     font-weight: var(--fw-medium);
     line-height: var(--lh-text);
 }
 
-@media screen and (max-width :769px) {
+.tiny {
+    color: var(--theme-dark-tertiary);
+    font-size: var(--fs-tiny-text);
+    font-family: var(--ff-text);
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-text);
+}
+
+@media screen and (max-width:769px) {
     :root {
         // Font size Mobile
         --fs-bigger: 2.625rem;
@@ -140,8 +149,5 @@ h4 {
         --fs-h2: 2rem;
         --fs-h3: 1.625rem;
         --fs-h4: 1.25rem;
-        --fs-text: 1rem;
-        --fs-light: 0.9375rem;
-        --fs-lighter: 0.875rem;
     }
 }

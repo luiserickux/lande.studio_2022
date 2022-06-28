@@ -157,7 +157,7 @@ main {
     }
 
     .graph {
-        animation: graph-rotate 60s ease infinite;
+        animation: graph-rotate 50s ease infinite;
         width: 110rem;
     }
 
@@ -689,11 +689,11 @@ footer {
 @media screen and (max-width :769px) {
     .banner {
         .detail-graph {
-            transform: translate(-50%, -60%);
+            transform: translate(-50%, -55%);
         }
 
         .graph {
-            width: 80rem;
+            width: 75rem;
         }
     }
 
@@ -741,7 +741,6 @@ footer {
 }
 
 @media screen and (max-width:580px) {
-
     .banner {
         .detail1 {
             left: -55rem;
@@ -860,11 +859,7 @@ footer {
 }
 
 @keyframes graph-rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
+    to {
         transform: rotate(360deg);
     }
 }

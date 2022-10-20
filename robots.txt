@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /scss
+Disallow: /resources
+Disallow: /design-system
+
+Allow: /index.html
